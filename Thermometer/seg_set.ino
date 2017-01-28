@@ -1,7 +1,7 @@
 #include "seg_display.h"
 
 namespace Thermometer {
-//namespace Segment {
+
 namespace {
 void seg_disp0(void)
 {
@@ -142,7 +142,6 @@ void seg_disp::ThermoMain() {
   auto a = 1000;
   PORTB = 0x01;
   while (1) {
-    digitalWrite(PORTB0,LOW);
     seg_disp0();
     delay(a);
     seg_disp1();
@@ -167,5 +166,4 @@ void seg_disp::ThermoMain() {
   }
 }
 
-//}  // namespace Thermometer
-}  // namespace seg
+}  // namespace Thermometer

@@ -13,29 +13,12 @@
 #define seg7_dp PORTD7
 
 namespace Thermometer {
-//namespace Segment {
 
 class seg_disp {
  public :
   void ThermoMain();
-
-/*
- private :
-  void seg_disp0(void);
-  void seg_disp1(void);
-  void seg_disp2(void);
-  void seg_disp3(void);
-  void seg_disp4(void);
-  void seg_disp5(void);
-  void seg_disp6(void);
-  void seg_disp7(void);
-  void seg_disp8(void);
-  void seg_disp9(void);
-  void seg_clear(void);
-*/
 };
 
-//}  // namespace Thermometer
-}  // namespace Segment
+}  // namespace Thermometer
 
 #endif  // SEG_DISPLAY_H
