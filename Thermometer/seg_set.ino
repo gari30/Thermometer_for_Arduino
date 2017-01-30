@@ -140,7 +140,6 @@ void seg_clear(void)
 
 void seg_disp::ThermoMain() {
   auto a = 1000;
-  PORTB = 0x01;
   while (1) {
     seg_disp0();
     delay(a);
