@@ -19,6 +19,21 @@ class seg_disp {
   void ThermoMain();
 };
 
+extern int count;
+
+constexpr static unsigned char display_type[] = {
+  0xc0, //0
+  0xf9, //1
+  0xa4, //2
+  0xb0, //3
+  0x99, //4
+  0x92, //5
+  0x82, //6
+  0xf8, //7
+  0x80, //8
+  0x90, //9
+};
+
 }  // namespace Thermometer
 
 #endif  // SEG_DISPLAY_H

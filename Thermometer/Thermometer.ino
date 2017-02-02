@@ -18,4 +18,9 @@ void loop() {
 
 void TimerInterrupt() {
   PORTB ^= 0x03;
+  if (PORTB == 0x01) {
+    PORTD = Thermometer::display_type[Thermometer::count % 10];
+  } else {
+    PORTD = Thermometer::display_type[Thermometer::count / 10];
+  }
 }
